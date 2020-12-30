@@ -15,5 +15,5 @@ Types::QueryType = GraphQL::ObjectType.define do
     resolve ->(_obj, _args, ctx) {
       ctx[:blog]
     }
-
+  end
 end
