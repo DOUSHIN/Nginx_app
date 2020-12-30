@@ -1,0 +1,7 @@
+<h1>編集</h1>
+<%= form_with(model:@blog, local:true, url:choose_new_or_edit)do |format| %>
+  <%= format.label :content %>
+  <%= format.text_field :content %>
+  <%= format.submit %>
+  <%= format.submit "戻る", name:"back" %>
+<% end %>

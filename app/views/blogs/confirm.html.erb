@@ -1,0 +1,7 @@
+<h1>以下の内容で送信する</h1>
+<%= form_with(model:@blog, local:true)do |format| %>
+  <%= format.hidden_field :content %>
+  <p>内容：<%= @blog.content %></p>
+  <%= format.submit %>
+  <%= format.submit "戻る",name:"back" %>
+<% end %>
